@@ -1,0 +1,22 @@
+{
+  "name": "nameOfPackage",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "npx webpack-dev-server --config webpack.config.dev.js",
+    "clear": "rm -rf dist/*",
+    "build": "npx webpack --config webpack.config.prod.js",
+    "prepublishOnly": "npm run clear && npm run build"
+  },
+  "keywords": [],
+  "author": "Poulpinounette",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^5.4.3",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
